@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{998a499d-29d8-43fb-99f7-6d6e88a49970}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>H:\SSW-Lanxess_Researomatic_Sprayer\SSW-Lanxess_Researomatic_Sprayer\Program_Files</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <AssemblyName>SSW-Lanxess_Researomatic_Sprayer</AssemblyName>
+    <Name>SSW-Lanxess_Researomatic_Sprayer</Name>
+    <RootNamespace>SSW-Lanxess_Researomatic_Sprayer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+    <Compile Include="Program_Files\loopcounter.py" />
+    <Compile Include="Program_Files\ppl.py" />
+    <Compile Include="Program_Files\dxf.py" />
+    <Compile Include="Program_Files\gcode.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Program_Files" />
+  </ItemGroup>
+</Project>
